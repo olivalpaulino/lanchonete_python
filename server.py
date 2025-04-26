@@ -1,5 +1,5 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
-from app.controller import handle_request
+from controller import handle_request
 import json
 
 class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):

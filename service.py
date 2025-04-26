@@ -1,4 +1,4 @@
-from app.model import Product
+from model import Product
 
 class ProductService:
     def __init__(self):

@@ -1,7 +1,7 @@
 import json
 from urllib.parse import parse_qs
 
-from app.service import ProductService
+from service import ProductService
 
 product_service = ProductService()
 

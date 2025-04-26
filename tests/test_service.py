@@ -1,5 +1,5 @@
 import unittest
-from app.service import ProductService
+from service import ProductService
 
 class TestProductService(unittest.TestCase):
     def test_add_and_list_product(self):
