@@ -44,10 +44,10 @@ Ideia da aplicação:
 Tudo usando requisições HTTP (GET, POST) e JSON.
 
 Exemplo de uso:
-Com o servidor rodando:
+Com o servidor rodando você pode fazer uma requisição web para localhost:8000:
 - GET /products → lista todos os produtos
 - POST /products → cria um novo produto
--- Exemplo de corpo da requisição:
+-- Exemplo de corpo da requisição, seria interessante usar postman com o corpo da requisição:
 {
   "name": "Hamburguer",
   "price": 25.0
