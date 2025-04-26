@@ -45,15 +45,27 @@ Tudo usando requisições HTTP (GET, POST) e JSON.
 
 Exemplo de uso:
 Com o servidor rodando você pode fazer uma requisição web para localhost:8000:
-- GET /products → lista todos os produtos
-- POST /products → cria um novo produto
+- GET /products → lista todos os produtos (localhost:8000/products)
+- POST /products → cria um novo produto (localhost:8000/products)
 -- Exemplo de corpo da requisição, seria interessante usar postman com o corpo da requisição:
 {
   "name": "Hamburguer",
   "price": 25.0
 }
 
+Passo 1: Fazer uma requisição com o método http post, usando a rota localhost:8000/products com o corpo da requisição acima.
+Passo 2: Fazer uma requisição com o método http get, para analisar todos os produtos cadastrados, pela rota: localhost:8000/products
+Passo 3: Caso cadastre mais de um produto via método http post, seguindo as instruções do passo 1, você agora pode pesquisar produtos cadastrados pelo id, usando o método http, na rota: localhost:8000/products/id, onde id é o substituido pelo código de identificação do produto que se deseja ver (esse código é gerado quando se cadastra um produto via método http post).
+
 GET /products/1 → busca o produto com ID 1
+
+Se você tivesse cadastrado só o produto acima, Hambuguer com o preço 25.0, o código id seria 1. Logo, o retorno da requisição GET localhost:8000/products/1 seria:
+
+{
+    "id": 1,
+    "name": "Hamburguer",
+    "price": 25.0
+}
 
 Espero que tenha gostado do exemplo e tenha dado tudo certo na prática.
 
