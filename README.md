@@ -8,14 +8,23 @@ API REST em Python puro, usando apenas módulos nativos (http.server) para mostr
 simple_api/
 
 ├── app/
+
 │   ├── __init__.py
+
 │   ├── server.py
+
 │   ├── controller.py
+
 │   ├── service.py
+
 │   └── model.py
+
 ├── tests/
+
 │   └── test_service.py
+
 ├── README.md
+
 └── requirements.txt
 
 Explicação Rápida:
